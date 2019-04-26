@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Dark Theme CSS Customization
+Bundle-SymbolicName: net.winklerweb.darktheme.custom;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: net.winklerweb.custom.darktheme
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.e4.ui.css.swt.theme
+Eclipse-BundleShape: dir
+Bundle-Vendor: https://www.winklerweb.net

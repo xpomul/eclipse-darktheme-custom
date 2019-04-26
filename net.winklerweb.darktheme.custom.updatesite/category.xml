@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/net.winklerweb.darktheme.custom.feature_1.0.0.qualifier.jar" id="net.winklerweb.darktheme.custom.feature" version="1.0.0.qualifier">
+      <category name="net.winklerweb.darktheme.custom"/>
+   </feature>
+   <category-def name="net.winklerweb.darktheme.custom" label="winklerweb.net dark theme CSS customization"/>
+</site>
