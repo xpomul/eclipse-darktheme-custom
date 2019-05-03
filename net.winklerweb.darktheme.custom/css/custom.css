@@ -74,7 +74,7 @@ IEclipsePreferences#org-eclipse-jdt-ui:net-winklerweb-jdt-ui { /* pseudo attribu
 		'semanticHighlighting.interface.color=128,242,246'
 		'semanticHighlighting.interface.enabled=true'
 		'semanticHighlighting.localVariable.enabled=true'
-		'semanticHighlighting.localVariableDeclaration.color=242,242,0'
+		'semanticHighlighting.localVariableDeclaration.color=242,242,64'
 		'semanticHighlighting.localVariableDeclaration.enabled=true'
 		'semanticHighlighting.localVariableDeclaration.bold=false'
 		'semanticHighlighting.method.enabled=true'
@@ -140,7 +140,13 @@ FormatterPreferenceSectionComposite {
 
 
 MyWorkCanvas,
-MyWorkCanvas > * {
+MyWorkCanvas * {
   background-color: #808080;
+}
+
+TeamSashForm StyledText,
+TeamSashForm PatchedStyledText 
+{
+    background-color: #808080
 }
 
