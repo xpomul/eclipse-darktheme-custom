@@ -7,6 +7,5 @@
         <relativePath>../net.winklerweb.darktheme.custom.parent</relativePath>
     </parent>
     <artifactId>net.winklerweb.darktheme.custom</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>eclipse-plugin</packaging>
 </project>

@@ -1,12 +1,35 @@
 <project>
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>net.winklerweb.darktheme.custom</groupId>
-        <artifactId>net.winklerweb.darktheme.custom.parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../net.winklerweb.darktheme.custom.parent</relativePath>
-    </parent>
-    <artifactId>net.winklerweb.darktheme.custom.feature</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>eclipse-feature</packaging>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.winklerweb.darktheme.custom</groupId>
+		<artifactId>net.winklerweb.darktheme.custom.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../net.winklerweb.darktheme.custom.parent</relativePath>
+	</parent>
+	<artifactId>net.winklerweb.darktheme.custom.feature</artifactId>
+	<packaging>eclipse-feature</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<id>package-feature</id>
+						<configuration>
+							<finalName>
+								${project.artifactId}-${unqualifiedVersion}.${buildQualifier}</finalName>
+						</configuration>
+						<goals>
+							<goal>build-qualifier</goal>
+							<goal>package-feature</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
